@@ -2,7 +2,7 @@
   <main>
     <div class="bg-gray-500 dark:bg-slate-700 px-10 py-3 mb-5 flex items-center justify-between">
       <div>
-        <h1 class="text-2xl font-semibold">Mitchell Blankenship</h1>
+        <h1 class="text-2xl">Mitchell Blankenship</h1>
       </div>
       <nav>
         <ul class="flex items-center justify-between space-x-2">
@@ -30,8 +30,18 @@
 <style>
 @import 'tailwindcss';
 @import '@nuxt/ui';
+@plugin "@tailwindcss/typography";
+
+h1 {
+  font-family: Audiowide, monospace;
+}
+
+body {
+  font-family: Roboto, sans-serif
+}
 
 a {
-  @apply hover:bg-slate-900 px-2 py-1 rounded-md;
+  @apply hover:bg-slate-900 px-2 py-1 rounded-md font-light tracking-wide;
+  font-family: Rationale, monospace;
 }
 </style>

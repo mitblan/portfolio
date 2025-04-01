@@ -6,5 +6,7 @@ const { data: page } = await useAsyncData(route.path, () => {
 </script>
 
 <template>
-  <ContentRenderer v-if="page" :value="page" />
+  <div class="prose dark:prose-invert">
+    <ContentRenderer v-if="page" :value="page" :prose="true" />
+  </div>
 </template>
